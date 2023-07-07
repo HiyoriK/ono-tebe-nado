@@ -34,7 +34,7 @@
 
 .header__logo {
   display: block;
-  justify-self:center;
+  justify-self: center;
   width: 138px;
 }
 
@@ -141,7 +141,6 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color: transparent;
-  
 }
 
 .lots {
