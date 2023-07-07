@@ -1,6 +1,6 @@
 .header {
   display: grid;
-  grid-template-columns: 1fr 138px 587px;
+  grid-template-columns: 388px 1fr 387px;
   align-items: center;
   margin: 92px 49px 90px 51px;
 }
@@ -34,11 +34,8 @@
 
 .header__logo {
   display: block;
+  justify-self:center;
   width: 138px;
-}
-
-.header__logo-image {
-  text-align: right;
 }
 
 .contacts {
@@ -83,7 +80,7 @@
 .cover__title {
   position: relative;
   z-index: 2;
-  margin-bottom: 120px;
+  margin-bottom: 135px;
   color: #fff;
   font-weight: 700;
   font-size: 100px;
@@ -100,13 +97,11 @@
 .aligned-text-center {
   display: block;
   margin: 20px 0;
-  line-height: 1;
   text-align: center;
 }
 
 .aligned-text-right {
   display: block;
-  line-height: 1.36;
   text-align: right;
 }
 
@@ -143,8 +138,8 @@
   color: #fff;
   font-size: 22px;
   line-height: 1.2;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
   background-color: transparent;
   
 }
