@@ -9,9 +9,10 @@
   display: flex;
   gap: 32px;
   list-style-type: circle;
+  min-width: 388px;
 }
 
-.list-item_no-bullit {
+.links-list-item_no-bullit {
   list-style: none;
 }
 
@@ -23,9 +24,16 @@
   text-decoration: none;
 }
 
+.header__link:hover,
+.footer__link:hover {
+  border-bottom: 2px solid;
+}
+
 .header__link-active,
 .footer__link-active {
   border-bottom: none;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .header__link-list-item-no-bullit {
@@ -35,13 +43,14 @@
 .header__logo {
   display: block;
   justify-self: center;
-  width: 138px;
+  width: 135px;
 }
 
 .contacts {
   justify-self: end;
   font-size: 18px;
   line-height: 1.35;
+  font-style: normal;
 }
 
 .header__contacts {
@@ -54,13 +63,14 @@
   text-decoration: none;
 }
 
-.adress {
-  font-style: normal;
+.phone:hover,
+.email:hover {
+  border-bottom: 2px solid;
 }
 
 .cover {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   margin-bottom: 180px;
   padding: 165px 50px 50px;
   background-image: url("../images/cover.jpg");
@@ -71,10 +81,11 @@
 .overlay {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: -1;
   width: 100%;
   opacity: 0.6;
   background-color: #000;
+  pointer-events: none;
 }
 
 .cover__title {
@@ -92,6 +103,10 @@
 .aligned-text {
   display: block;
   line-height: 1.15;
+}
+
+.aligned-text:hover {
+  color: aqua;
 }
 
 .aligned-text-center {
@@ -132,7 +147,7 @@
 
 .bet-button {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   border: 1px solid #fff;
   padding: 12px 31px;
   color: #fff;
@@ -141,6 +156,12 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color: transparent;
+}
+
+.bet-button:hover {
+  cursor: pointer;
+  background-color: #000;
+  opacity: 0.7;
 }
 
 .lots {
@@ -166,8 +187,6 @@
 }
 
 .lots__card-list-item {
-  position: relative;
-  z-index: 1;
   flex-grow: 1;
   width: 430px;
   height: 450px;
@@ -178,6 +197,8 @@
 }
 
 .card {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -226,6 +247,11 @@
   font-size: 20px;
   line-height: 1.2;
   text-decoration: none;
+}
+
+.lots__look-more-link:hover {
+  border-bottom: 2px solid;
+  font-size: 21px;
 }
 
 .about {
@@ -291,4 +317,9 @@
 
 .socials-icon {
   width: 48px;
+}
+
+.socials-icon:hover {
+  border: 2px solid #000;
+  border-radius: 24px;
 }
